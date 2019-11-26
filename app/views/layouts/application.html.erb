@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cholmes</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item active">
+            <li class="nav-item">
+              <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+            </li>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'GitHub', 'https://github.com/cooperrholmes', class: 'navbar-brand' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Projects', projects_path, class: 'navbar-brand' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Contact', contact_index_path, class: 'navbar-brand' %>
+          </li>
+          <li class="nav-item">
+            <a href="https://drive.google.com/file/d/192T8Iar3X3LTxHMvTJlZt-LWFHxeLQK7/view?usp=sharing" class="navbar-brand"> Resume </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
