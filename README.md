@@ -6,3 +6,5 @@
 
 ## Technical Information
 * HTML, CSS, Ruby
+
+![alt text](https://i.imgur.com/dZ2FKho.png "Portfolio")
